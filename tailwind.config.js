@@ -8,7 +8,7 @@ module.exports = {
         secondary: '#222835',
         tertiary: '#889B91',
         quaternary: '#777878',
-        accent: '3e8b83',
+        accent: '#3e8b83',
       },
     },
   },
