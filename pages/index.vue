@@ -1,12 +1,13 @@
 <template>
   <div>
-    <Header :bg_bool="bg_bool" />
+    <Header />
     <div class="bg-white w-full h-screen">
       <Title class="mx-auto" />
     </div>
     <div>
-      <Works class="mx-auto" />
+      <Works class="mx-auto mb-8" />
     </div>
+    <Profile class="mx-auto" />
   </div>
 </template>
 
@@ -14,7 +15,7 @@
 export default {
   data() {
     return {
-      bg_bool: true,
+      isAppear: false,
     };
   },
   link: [
@@ -29,11 +30,18 @@ export default {
   },
   methods: {
     scrollWindow() {
-      // const scroll = window.scrollY;
-      // scroll >= 300 ? (this.bg_bool = true) : (this.bg_bool = false);
-      // console.log(this.bg_bool);
+      const scroll = window.scrollY;
       const header = document.querySelector('header');
-      header.classList.toggle('scroll-nav', window.scrollY > 0);
+      if (scroll >= 300) {
+        if (this.isAppear === false) header.classList.toggle('bg-disappear');
+        header.classList.toggle('bg-appear', scroll >= 300);
+        this.isAppear = true;
+      } else {
+        if (this.isAppear) {
+          header.classList.toggle('bg-disappear');
+          this.isAppear = false;
+        }
+      }
     },
   },
 };

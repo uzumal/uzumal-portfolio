@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full h-24 md:h-20 px-16 pt-8 fixed transition-colors" :class="[bg_bool === true ? 'bg-appear' : 'bg-disappear']">
+  <header class="w-full h-24 md:h-20 px-16 pt-8 fixed transition-colors">
     <div v-if="mobileSize">
       <Hamburger />
     </div>
@@ -9,12 +9,6 @@
 
 <script>
 export default {
-  props: {
-    bg_bool: {
-      type: Boolean,
-      required: true,
-    },
-  },
   data() {
     return {
       mobileSize: true,
@@ -32,7 +26,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style>
 .bg-appear {
   animation: change-color-app 0.5s ease 0s forwards;
 }
