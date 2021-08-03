@@ -4,9 +4,7 @@
     <div class="bg-white w-full h-screen">
       <Title class="mx-auto" />
     </div>
-    <div>
-      <Works class="mx-auto mb-8" />
-    </div>
+    <Works class="mx-auto mb-8" />
     <Profile class="mx-auto" />
   </div>
 </template>
@@ -31,16 +29,18 @@ export default {
   methods: {
     scrollWindow() {
       const scroll = window.scrollY;
+      console.log(scroll);
       const header = document.querySelector('header');
       if (scroll >= 300) {
-        if (this.isAppear === false) header.classList.toggle('bg-disappear');
-        header.classList.toggle('bg-appear', scroll >= 300);
+        header.classList.remove('bg-disappear');
+        header.classList.add('bg-appear');
         this.isAppear = true;
       } else {
         if (this.isAppear) {
-          header.classList.toggle('bg-disappear');
-          this.isAppear = false;
+          header.classList.add('bg-disappear');
         }
+        header.classList.remove('bg-appear');
+        this.isAppear = false;
       }
     },
   },
