@@ -543,7 +543,6 @@ label.hamburger text open {
   position: absolute;
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
-  text-align: center;
   overflow: hidden;
   -webkit-transition: width .25s .35s, color .45s .35s;
   transition: width .25s .35s, color .45s .35s;
@@ -562,7 +561,7 @@ label.hamburger text open {
 
 label.hamburger > i {
   position: absolute;
-  width: 100%;
+  width: 70%;
   height: 2px;
   top: 50%;
   background-color: #FEFEFE;
@@ -601,8 +600,8 @@ label.hamburger > i:after {
 
 label.hamburger {
   position: fixed;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  right: 30px;
 }
 
 /**
