@@ -1,0 +1,36 @@
+{
+  "Profile": [
+    {
+      "name": "Kazuma Takeuchi",
+      "career": "I am master student at Doshisha University, majoring in Information Technology, and my research focuses on extended reality such as augmented reality and mixed reality."
+    }
+  ],
+  "Educations":[
+    {
+      "school": "Fukui Prefectural <a href = 'https://www.koshi-h.ed.jp/'> Koshi High School</a>",
+      "details": "Infantry course"
+    },
+    {
+      "school": "<a href = 'https://se.doshisha.ac.jp/'>Doshisha University</a>",
+      "details": "College of Science and Technology Department of Information Systems Design"
+    },
+    {
+      "school": "<a href = 'https://se.doshisha.ac.jp/'>Doshisha University</a>",
+      "details": "Graduate School of Science and Engineering, Department of Computer Science and Engineering"
+    }
+  ],
+  "Works": [
+    {
+      "name": "ar-hololens-visualization",
+      "skills": ["unity", "mrtkv2", "hololens"]
+    },
+    {
+      "name": "pokedan",
+      "skills": ["c++", "dxlib", "pokemon"]
+    },
+    {
+      "name": "nisplan",
+      "skills": ["nuxtjs", "pwa", "aws"]
+    }
+  ]
+}
