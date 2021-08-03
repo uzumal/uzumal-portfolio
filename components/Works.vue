@@ -1,8 +1,11 @@
 <template>
-  <div class="grid grid-cols-3">
-    <section v-for="language in languages" :key="language.id">
-      <Card />
-    </section>
+  <div class="w-4/5 pt-8">
+    <h2 class="text-accent">Works</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-2 md:gap-y-4 justify-items-center">
+      <section v-for="language in languages" :key="language.id">
+        <Card />
+      </section>
+    </div>
   </div>
 </template>
 
