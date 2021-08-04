@@ -4,7 +4,7 @@
     <div class="bg-white w-full h-screen">
       <Title class="mx-auto" />
     </div>
-    <Works class="mx-auto mb-8" />
+    <Works class="mx-auto" />
     <Profile class="mx-auto" />
   </div>
 </template>

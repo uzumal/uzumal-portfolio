@@ -18,11 +18,11 @@ export default {
   },
 
   bodyAttrs: {
-    class: 'bg-primary',
+    class: 'font-family: "Monoton", cursive',
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/css/style.css'],
+  css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -37,7 +37,13 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['nuxt-webfontloader'],
+
+  webfontloader: {
+    google: {
+      families: ['Monoton'],
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
