@@ -1,11 +1,9 @@
 <template>
   <div>
     <Header />
-    <div class="bg-white w-full h-screen">
-      <Title class="mx-auto" />
-    </div>
-    <Works class="mx-auto" />
-    <Profile class="mx-auto" />
+    <Title />
+    <Works />
+    <Profile />
   </div>
 </template>
 
@@ -46,3 +44,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.h-title {
+  height: 40vh;
+}
+</style>

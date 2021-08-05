@@ -15,14 +15,13 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
     ],
-  },
-
-  bodyAttrs: {
-    class: 'font-family: "Monoton", cursive',
+    // bodyAttrs: {
+    //   class: 'font-style',
+    // },
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/css/style.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -39,11 +38,11 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['nuxt-webfontloader'],
 
-  webfontloader: {
-    google: {
-      families: ['Monoton'],
-    },
-  },
+  // webfontloader: {
+  //   google: {
+  //     families: ['Darker Grotesque'],
+  //   },
+  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

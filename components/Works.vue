@@ -1,7 +1,7 @@
 <template>
-  <div class="w-4/5 h-screen py-8">
-    <h2 class="text-center text-4xl text-accent py-16">Works</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-y-4 md:gap-y-8 auto-rows-auto justify-items-center">
+  <div class="w-full h-screen py-8 bg-white">
+    <h2 class="text-center text-4xl text-black py-16">Works</h2>
+    <div class="w-4/6 h-4/5 grid grid-cols-2 md:grid-cols-3 gap-y-4 md:gap-y-8 auto-rows-auto mx-auto justify-items-center">
       <section v-for="language in languages" :key="language.id">
         <Card />
       </section>
@@ -25,3 +25,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.bg-w {
+  background-color: #4f5b5c;
+}
+</style>

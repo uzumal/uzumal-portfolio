@@ -1,19 +1,19 @@
 <template>
   <section class="h-full">
     <div class="flex justify-between items-center text-sm">
-      <a href="#" class="text-quaternary hover:text-accent transition-late">home</a>
+      <a href="#" class="text-primary hover:text-accent transition-late">home</a>
       <ul class="flex">
         <li class="mr-6">
-          <a href="#" class="text-quaternary hover:text-accent transition-late">dashboard</a>
+          <a href="#" class="text-primary hover:text-accent transition-late">dashboard</a>
         </li>
         <li class="mr-6">
-          <a href="#" class="text-quaternary hover:text-accent transition-late">notifications</a>
+          <a href="#" class="text-primary hover:text-accent transition-late">notifications</a>
         </li>
         <li class="mr-6">
-          <a href="#" class="text-quaternary hover:text-accent transition-late">system administration</a>
+          <a href="#" class="text-primary hover:text-accent transition-late">system administration</a>
         </li>
         <li class="mr-6">
-          <a href="#" class="text-quaternary hover:text-accent transition-late">support</a>
+          <a href="#" class="text-primary hover:text-accent transition-late">support</a>
         </li>
       </ul>
     </div>
