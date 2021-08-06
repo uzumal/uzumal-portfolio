@@ -15,9 +15,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
     ],
-    // bodyAttrs: {
-    //   class: 'font-style',
-    // },
+    bodyAttrs: {
+      class: 'font-style',
+    },
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -38,11 +38,11 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['nuxt-webfontloader'],
 
-  // webfontloader: {
-  //   google: {
-  //     families: ['Darker Grotesque'],
-  //   },
-  // },
+  webfontloader: {
+    google: {
+      families: ['Darker Grotesque'],
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
