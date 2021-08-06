@@ -1,9 +1,10 @@
 <template>
-  <div>
+  <div class="w-full">
     <Header />
     <Title />
     <Works />
     <Profile />
+    <ReturnTopButton :button-active="buttonActive" />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ export default {
   data() {
     return {
       isAppear: false,
+      buttonActive: false,
     };
   },
   link: [
@@ -27,8 +29,9 @@ export default {
   methods: {
     scrollWindow() {
       const scroll = window.scrollY;
-      console.log(scroll);
+      const top = 100;
       const header = document.querySelector('header');
+      // header処理
       if (scroll >= 300) {
         header.classList.remove('bg-disappear');
         header.classList.add('bg-appear');
@@ -39,6 +42,12 @@ export default {
         }
         header.classList.remove('bg-appear');
         this.isAppear = false;
+      }
+      // topへ戻る処理
+      if (top <= scroll) {
+        this.buttonActive = true;
+      } else {
+        this.buttonActive = false;
       }
     },
   },

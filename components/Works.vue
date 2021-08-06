@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full h-screen py-8 bg-white">
-    <h2 class="text-center text-4xl text-black py-16">Works</h2>
-    <div class="w-4/6 h-4/5 grid grid-cols-2 md:grid-cols-3 gap-y-4 md:gap-y-8 auto-rows-auto mx-auto justify-items-center">
+  <div id="works" class="w-full h-screen py-8 bg-white">
+    <h2 class="text-center text-horizon text-4xl font-semibold text-black py-16">Works</h2>
+    <div class="w-4/6 h-4/5 grid grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-y-8 auto-rows-auto mx-auto justify-items-center">
       <section v-for="language in languages" :key="language.id">
         <Card />
       </section>
@@ -28,5 +28,8 @@ export default {
 <style scoped>
 .bg-w {
   background-color: #4f5b5c;
+}
+.text-horizon {
+  letter-spacing: 0.55em;
 }
 </style>
